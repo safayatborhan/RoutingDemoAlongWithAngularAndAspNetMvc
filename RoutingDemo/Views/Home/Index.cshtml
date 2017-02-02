@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Angulars/angular.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+<script src="~/Angulars/Controllers.js"></script>
+
+<div ng-app="angualarModule">
+    <div ng-controller="indexController">
+        <h2>{{name}}</h2>
+        <br />
+        <br />
+        <a href="/#/firstPage">Call First Page</a>
+        <br />
+        <a href="/#/secondPage">Call Second Page</a>
+        <div ng-view></div>
+    </div>
+</div>
+
+
